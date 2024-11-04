@@ -16,7 +16,7 @@ async function init() {
         resolvers:{
             Query:{
                 hello:()=>'Hello, World!',
-                say: (_,{name}:{name:string})=>`hello {name}, how are you? `
+                say: (_,{name}:{name:string})=>`hello ${name}, how are you? `
                 }
         }, //
       });
